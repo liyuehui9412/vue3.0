@@ -9,13 +9,14 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.20",
     "vue": "^3.0.0",
     "vue-i18n": "^8.22.0",
-    "vue-router": "^3.4.6",
-    "vuex": "^3.5.1"
+    "vue-router": "^4.0.0-alpha.6",
+    "vuex": "^4.0.0-alpha.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

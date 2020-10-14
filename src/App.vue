@@ -1,24 +1,11 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="./assets/lee.jpeg">
-    <HelloWorld :msg="msg" />
-  </div>
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  setup() {
-    const msg = '碰一下QAQ'
-    return {
-      msg: msg
-    }
-  }
+  name: 'App'
 }
 </script>
 

@@ -17,6 +17,14 @@ module.exports = {
       .set('@s', resolve('src/service')) /* 别名配置 */
     config.optimization.runtimeChunk('single')
   },
+  css: {
+    sourceMap: true,
+    loaderOptions: {
+      sass: {
+        data: `@import "~@/style/index.scss";`
+      }
+    }
+  },
   devServer: {
     // host: "localhost",
     /* 本地ip地址 */

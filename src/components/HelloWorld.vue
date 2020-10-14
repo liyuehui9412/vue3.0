@@ -1,17 +1,23 @@
 <template>
   <div class="hello">
     <h1 ref="title">{{ msg }}</h1>
-    <button @click="changeColor">点我</button>
+    <button @click="changeColor">变个身</button>
+    <button @click="hrefHandle">跳转</button>
   </div>
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: ''
+    }
   },
   setup() {
+    const router = useRouter()
     const changeColor = () => {
       let i = 0
       let str = '#'
@@ -23,8 +29,12 @@ export default {
       }
       document.body.style.backgroundColor = str
     }
+    const hrefHandle = () => {
+      router.push('/my')
+    }
     return {
-      changeColor
+      changeColor,
+      hrefHandle
     }
   }
 }
