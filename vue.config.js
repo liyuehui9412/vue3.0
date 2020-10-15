@@ -18,10 +18,11 @@ module.exports = {
     config.optimization.runtimeChunk('single')
   },
   css: {
-    sourceMap: true,
+    extract: true,
+    sourceMap: false,
     loaderOptions: {
       sass: {
-        data: `@import "~@/style/index.scss";`
+        prependData: `@import "~@/style/index.scss";`
       }
     }
   },
